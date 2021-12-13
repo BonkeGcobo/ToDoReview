@@ -5,7 +5,9 @@ import DeleteButton from './deleteBtn.png';
 export function populateList() {
   const todoList = document.querySelector('.List-Task');
   todoList.innerHTML = '';
-  ToDo.list.forEach((item) => { 
+  console.log('What a problem');
+  ToDo.list.forEach((item) => {
+    console.log('We here');
     const listItem = document.createElement('li');
     listItem.setAttribute('id', item.index);
     listItem.classList = 'item-container';
@@ -80,6 +82,7 @@ export function populateList() {
 
 // Add functionality
 export function addItem() {
+  console.log('Yipee');
   const inputValue = document.querySelector('.addList').value;
   const newItem = new ToDo(inputValue, false);
 
