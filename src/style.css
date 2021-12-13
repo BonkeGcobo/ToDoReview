@@ -1,3 +1,111 @@
-body {
-  background-color: bisque;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+#renew {
+  cursor: pointer;
+}
+
+.addList {
+  outline: none;
+  border-style: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.arrow-btn {
+  border-style: none;
+  background-color: #fff;
+}
+
+.AddingList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CleanDone {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.anchor {
+  text-decoration: none;
+  color: grey;
+}
+
+.List-Task {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.label {
+  margin-left: 1rem;
+}
+
+.toDo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  border-style: none;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  box-shadow: 10px 10px 10px 10px #b3b4b7;
+}
+
+.form {
+  padding: 10px;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.edit-item {
+  display: inline;
+  font: inherit;
+  padding: 0;
+  height: 18px;
+  border: none;
+  outline: none;
+  resize: none;
+  cursor: text;
+  overflow: auto;
+}
+
+.text-area {
+  display: none;
+}
+
+.item-container {
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.item-container span,
+.item-container textarea {
+  width: 200px;
+  flex-grow: 1;
+}
+
+.cancel-btn {
+  margin-left: 2rem;
+  height: 20px;
+  width: 20px;
 }
